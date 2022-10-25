@@ -1,5 +1,5 @@
 from mpmath import *
-mp.dps=50
+mp.dps=50               #CHANGE THE PRECISION HERE
 x0= str(input("x0: "))
 x1= str(input("x1: "))
 x0,x1=mpf(x0),mpf(x1)
