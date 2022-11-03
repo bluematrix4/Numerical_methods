@@ -2,8 +2,8 @@
 #WILL SOON UPDATE TO MAKE IT WORK FOR MULTIPLE VARIABLES
 
 import numpy as np
-x = np.array(list(map(int, input("Enter values of x: ").split())))
-y = np.array(list(map(int, input("Enter values of y: ").split())))
+x = np.array(list(map(float, input("Enter values of x: ").split())))
+y = np.array(list(map(float, input("Enter values of y: ").split())))
 A=np.matrix([[len(x),np.sum(x)],[np.sum(x),np.sum(x**2)]])
 X=np.matrix([[np.sum(y)],[np.sum(x*y)]])
 b=np.linalg.solve(A,X)
